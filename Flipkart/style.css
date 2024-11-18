@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-body{
+    margin: 0 2%;
+}
+
+body{
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header{
+    background-color: white;
+    padding-top: 2px;
+    position: fixed;
+    width: 100%;
+    top: 1%;
+    z-index: 1;
+    height: 7%;
+}
+
+.container{
+    width: 100%;
+    margin: 0px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;;
+}
+
+.col-1{
+    width: 60%;
+}
+
+.col-2{
+    width: 38%;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    width: 80%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.search{
+    width: 75%;
+    margin-left: 2%;
+}
+
+.search input[type="text"]{
+    width: 100%;
+    background-color: rgb(207, 207, 231);
+    border-color: transparent;
+    height: 35px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/622/622669.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 5%;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-position-x: 1%;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.col-2>ul>li{
+    display: inline-block;
+    width: 18%;
+    padding: 20px 5px;
+    font-weight: 400;
+    font: 1em sans-serif;
+    position: relative;
+}
+
+.col-2>ul>li>a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+#section-1{
+    background-color: #f0f5ff;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+#section .product{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#section-1 .product img{
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+#section-1 h4{
+    margin-top: 10px;
+    color: #000;
+    font-weight: 500;
+    font: 1em sans-serif;
+}
+
+#banner{
+    margin-top: 10px;
+}
+
+#maha-sale .container{
+    margin: 0px;
+}
+
+#maha-sale .row .prod-img{
+    display: inline-block;
+    width: 33%;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+maha-sale .prod-img img{
+    height: 300px;
+    width: 100%;
+}
+
+#section-2{
+    background-color: #f0f5ff;
+    padding: 1% 0;
+    margin-bottom: 1%;
+}
+
+#section-2 h2{
+    margin-left: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+#section-2 h4{
+    margin-top: 15px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#section-2 .product{
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 16%;
+    margin: 0 1.5%;
+    border-radius: 2%;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#section-2 .product img{
+    height: 180px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+h3{
+    padding-top: 5px;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+
