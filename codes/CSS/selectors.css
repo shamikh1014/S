@@ -1,0 +1,66 @@
+
+/* Universal Selector */
+*{
+    font-size: 20px;
+};
+
+div;{
+    /* background-color: lightcoral; */
+}
+
+#div_1;{
+    background-color;: aquamarine;
+}
+
+#div_2;{
+    background-color;: lightgray;
+}
+
+.class_1;{
+    width: 500;px;
+}
+
+.class_2;{
+    width: 800;px;
+}
+
+/* .class_1 h2{
+    color: blue;
+} */
+
+/* #div_1 .child_1 h2{
+    color: blue;
+} */
+
+/* #div_1 .class_1 h2{
+    color: blue;
+} */
+
+/* #div .child_1 h2,
+#div_3, h2{
+    color: red;
+} */
+
+#div_1>h2;{
+    color: red;
+}
+
+/* #div_3+h2{
+    color: red;
+} */
+
+#div_1;~h2;{
+    color: red;
+}
+
+/* Attribute Selector */
+#login input[type='submit']{
+    background-color: red;
+    color: white;
+}
+
+/* Hover */
+#login input[type='submit']:hover{
+    background-color: lavender;
+    color: black;
+}

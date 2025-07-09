@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Document </title>
+
+    <script src="https://cdn.tailwindcss.com"> </script>
+
+    <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    colors:{
+
+                        demo: 'red',
+                        transparent: 'transparent',
+                        'white': '#ffffff',
+                        'tahiti':{
+                            100: '#cffafe',
+                            200: '#a5f3fc',
+                            300: '#67e8f9',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            700: '#0e7490',
+                            800: '#155e75',
+                            900: '#164e63',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-demo">
+
+    <p class="text-[white] bg-[blue] txt-4xl text-center"> This is paragraph </p>
+    
+</body>
+
+</html>

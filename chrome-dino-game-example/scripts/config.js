@@ -8,5 +8,7 @@ export const SPEED=20;
 export const MIN=600;
 export const MAX=1800;
 
+export const GRAVITY=10;
+
 
 // export-wrap in an object, then export {GAME_WIDTH, GAME HEIGHT}

@@ -21,9 +21,27 @@ let context;
 let floor;
 
 function gameStart(){
+
+    bindEvents();
     prepareCanvas();
     loadSprites();
     gameLoop();
+
+}
+
+function bindEvents(){
+
+    window.addEventListener('keydown', doJump);
+
+}
+
+function doJump(event){
+
+    console.log('Do Jump Call Event ', event.code);
+    if(event.code==='Space'){
+        player.jump();
+    }
+
 }
 
 function prepareCanvas(){
@@ -91,7 +109,7 @@ function generateRandomCactus(){
 
 function printCactus(context){
 
-    console.log('Cactus Array Size', cactusArray.length());
+    // console.log('Cactus Array Size', cactusArray.length());
 
     for(let cactus of cactusArray){
 
@@ -107,24 +125,73 @@ function removeUnusedCactus(){
 
 }
 
+function printGameOver(){
+
+    context.font='bold 48px serif';
+    context.fillStyle='grey';
+    context.fillText('Game Over', GAME_WIDTH/3, GAME_HEIGHT/2);
+
+}
+
 function gameLoop(){
 
     // console.log('Game Loop');
 
     clearScreen();
 
-    player.draw(context);
-    floor.draw(context);
+    if(isCollisionHappens){
 
-    printCactus(context);
-    generateRandomCactus();
-    removeUnusedCactus();
+        player.draw(context);
+        floor.draw(context);
 
-    setTimeout(function(){
+        printCactus(context);
+        generateRandomCactus();
+        removeUnusedCactus();
 
-        requestAnimationFrame(gameLoop);
+        printGameOver(context);
+        score();
 
-    }, FRAME_RATE)
+    }
+
+    else{
+
+        player.draw(context);
+        floor.draw(context);
+
+        printCactus(context);
+        generateRandomCactus();
+        removeUnusedCactus();
+        score();
+
+        setTimeout(function(){
+
+            requestAnimationFrame(gameLoop);
+
+        }, FRAME_RATE)
+
+    }
+
+}
+
+let scoreValue=0;
+function score(){
+
+    if(localStorage.maxScore){
+
+        localStorage.maxScore=scoreValue;
+
+    }
+
+    if(scoreValue>localStorage.maxScore){
+        localStorage.maxScore=scoreValue;
+    }
+
+    scoreValue++;
+
+    context.font='bold 20px serif';
+    context.fillStyle='grey';
+    context.fillText(scoreValue.toString(), padStart(5, 0), GAME_WIDTH-100, 40);
+    context.fillText(localStorage.maxScore.toString(), padStart(5, 0), GAME_WIDTH-200, 40);
 
 }
 
@@ -136,6 +203,30 @@ function clearScreen(){
 }
 
 
+function isCollide(){
+
+    return player.x < cactus.x + cactus.w && player.x + player.w > cactus.x && player.y < cactus.y + cactus.h && player.y + player.h > cactus.y;
+
+}
+
+
+function isCollisionHappens(){
+
+    return cactusArray.some(c=>isCollide(c));
+
+    // for(let cactus of cactusArray){
+
+    //     if(isCollide(cactus)){
+
+    //         return true;
+
+    //     }
+
+    // }
+
+    // return false;
+
+}
 
 
 

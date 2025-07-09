@@ -13,12 +13,51 @@
     <!-- Javascripts -->   
 
     <script src="https://kit.fontawesome.com/8e58fc33d7.js" crossorigin="anonymous"> </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"> </script>
+    <script type="text/javascript" src="https://cdn.bootstrap.com/typed.js/1.1.4/typed.min.js"> </script>
     <script src="assets/javascripts/main.js"> </script> 
 
 </head>
 <body>
 
     <div id="container">
+
+        <nav id="main-nav">
+
+            <ul>
+                <li>
+                    <a href="#home">
+                        <span> Home </span> <i class="fa-solid fa-house"> </i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        <span> About </span> <i class="fa-solid fa-user"> </i>
+                    </a>  
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        <span> Skills </span> <i class="fa-solid fa-laptop-code"> </i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects">
+                        <span> Projects </span> <i class="fa-solid fa-toolbox"> </i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        <span> Contact </span> <i class="fa-solid fa-address-book"> </i>
+                    </a> 
+                </li>
+
+            </ul>
+
+        </nav>
 
         <div class="wrapper">
 
@@ -35,7 +74,7 @@
                                 <img src="assets/images/user.jpeg" class="w-75" alt="img">
     
                             </div>
-    
+                            
                             <h2 class="mb-3"> Steve Smith </h2>
                             <h4 class="mb-4"> Web Developer </h4>
     
@@ -80,25 +119,33 @@
                     <div class="content h-100">
 
                         <!-- home -->
+
                         <section id="home" class="h-100">
 
                             <div id="inner-wrapper">
 
+                                <img src="assets/images/user.jpeg" class="w-50 mb-3" alt="img">
                                 <h1> Steve Smith </h1>
-                                <p> Full Stack Developer </p>
+                                <!-- <p> Full Stack Developer </p> -->
+
+                                <p>
+                                    I'm <span class="type-effect"> </span>
+                                </p>
 
                             </div>
                             
                         </section>
 
+
                         <!-- about -->
+
                         <section id="about">
 
                             <h2> About Me </h2>
 
                             <div class="row mb-4">
 
-                                <div class="col-md-7">
+                                <div class="col-md-6">
 
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla, unde itaque nobis tenetur adipisci rem, deleniti aut nemo iusto, quas molestias corporis praesentium cupiditate ipsam veritatis necessitatibus? Modi, natus.
@@ -106,7 +153,7 @@
 
                                 </div>
 
-                                <div class="col-md-5">
+                                <div class="col-md-6">
 
                                     <ul>
 
@@ -186,14 +233,16 @@
 
                         </section>
 
+
                         <!-- skills -->
+
                         <section id="skills">
 
                             <h2> Education & Skills </h2>
 
                             <div class="row">
 
-                                <div class="education col-md-8">
+                                <div class="education col-lg-8">
 
                                     <h4> Education & Experience </h4>
     
@@ -288,46 +337,156 @@
     
                                 </div>
 
-                                <div class="skillset col-md-4">
+                                <div class="skillset col-lg-4">
 
                                     <h4> Front End </h4>
 
                                     <ul>
 
                                         <li>
+
                                             <p> HTML 5 </p>
-                                            <span> </span>
+
+                                            <div class="bar">
+                                                <span class="p-80"> </span>
+                                            </div>
+
                                         </li>
 
                                         <li>
+
                                             <p> CSS 3 </p>
-                                            <span> </span>
+                                            <div class="bar">
+                                                <span class="p-90"> </span>
+                                            </div>
+
                                         </li>
 
                                         <li>
+
                                             <p> Javascript </p>
-                                            <span> </span>
+                                            <div class="bar">
+                                                <span class="p-70"> </span>
+                                            </div>
+
                                         </li>
 
                                         <li>
+
                                             <p> Bootstrap </p>
-                                            <span> </span>
+                                            <div class="bar">
+                                                <span class="p-95"> </span>
+                                            </div>
+
                                         </li>
 
                                         <li>
+
                                             <p> React </p>
-                                            <span> </span>
+                                            <div class="bar">
+                                                <span class="p-60"> </span>
+                                            </div>
+
                                         </li>
 
                                     </ul>
 
+                                    <hr>
+
                                     <h4> Back End </h4>
+
+                                    <ul>
+
+                                        <li>
+
+                                            <p> Node JS </p>
+
+                                            <div class="bar">
+                                                <span class="p-80"> </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            <p> Python </p>
+                                            <div class="bar">
+                                                <span class="p-95"> </span>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+                                    <hr>
+
                                     <h4> Database </h4>
+
+                                    <ul>
+
+                                        <li>
+
+                                            <p> MySQL </p>
+                                            <div class="bar">
+                                                <span class="p-70"> </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            <p> MongoDB </p>
+                                            <div class="bar">
+                                                <span class="p-95"> </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            <p> Postgre </p>
+                                            <div class="bar">
+                                                <span class="p-60"> </span>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+                                    <hr>
+
                                     <h4> Tools & IDE </h4>
 
+                                    <ul>
 
-    
-    
+                                        <li>
+
+                                            <p> VS Code </p>
+                                            <div class="bar">
+                                                <span class="p-70"> </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            <p> Eclipse </p>
+                                            <div class="bar">
+                                                <span class="p-95"> </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            <p> PyCharm </p>
+                                            <div class="bar">
+                                                <span class="p-60"> </span>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
     
                                 </div>
 
@@ -335,11 +494,140 @@
 
                         </section>
 
+
                         <!-- projects -->
-                        <section id="projects"> </section>
+
+                        <section id="projects">
+
+                            <h2> Projects </h2>
+
+                            <div class="row">
+
+                                <div class="col-lg-4 col-sm-6">
+
+                                    <div class="card">
+                                        <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6">
+
+                                    <div class="card">
+                                        <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6">
+
+                                    <div class="card">
+                                        <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6">
+
+                                    <div class="card">
+                                        <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6">
+
+                                    <div class="card">
+                                        <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6">
+
+                                    <div class="card">
+                                        <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6">
+
+                                    <div class="card">
+                                        <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/04/ecommerce3-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
 
                         <!-- contact  -->
-                        <section id="contact"> </section>
+
+                        <section id="contact">
+
+                            <h2> Contact </h2>
+
+                            <form>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputName1" class="form-label"> Enter Name </label>
+                                    <input type="text" placeholder="Enter Name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                                    <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label"> Enter Message </label>
+                                    <textarea class="form-control" placeholder="Enter Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary"> Contact Me </button>
+
+                            </form>
+
+                        </section>
+
 
                     </div>
 

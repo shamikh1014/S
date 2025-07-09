@@ -1,0 +1,22 @@
+
+[
+
+    {
+        "name":"Max",
+        "age":32,
+        "address":"delhi"
+    },
+
+    {
+        "name":"Max",
+        "age":31,
+        "address":"delhi"
+    },
+
+    {
+        "name":"Tom",
+        "age":26,
+        "address":"pune"
+    }
+
+]

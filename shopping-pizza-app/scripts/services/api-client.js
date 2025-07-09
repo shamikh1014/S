@@ -14,7 +14,7 @@ export async function makeNetworkCall(){
 
     catch(err){
 
-        console.log('Some Problem in API Call', err);
+        console.log('Some Problem in API Call ', err);
         throw err;
 
     }

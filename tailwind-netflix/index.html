@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Clone Netflix-BrainMentors </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css">
+
+    <script src="https://kit.fontawesome.com/8e58fc33d7.js" crossorigin="anonymous"> </script>
+    <script src="https://cdn.tailwindcss.com"> </script>
+
+    <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    colors:{
+                        demo: 'rgb(254 202 202)',
+                    },
+                    screens:{
+                        // 'xsm': '320px'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <section id="banner" class="w-[100%] h-[100vh]  bg-[url('./assets/images/banner.jpg')] bg-cover bg-center">
+
+        <div class="w-[100%] h-[100vh] bg-[rgba(0, 0, 0, 0.5)]">
+
+            <header class="w-[85%] mx-auto">
+
+                <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] py-2 items-center">
+
+                    <div id="logo">
+                        <img src="./assets/images/logo.png" alt="" class="w-[150px]">
+                    </div>
+
+                    <div id="buttons" class="text-[white] flex justify-end gap-[15px]">
+
+                        <div class="relative">
+
+                            <svg class="absolute left-[px] top-[5px]" xmlns="" fill="" role="" viewBox="" width="" height="" data-icon="" aria-hidden="">
+
+                                <path fill-rule="" clip-rule="" d="" fill=""> </path>
+
+                            </svg>
+
+                            <i class="fa-solid fa-language"> </i>
+
+                            <select name="" id="" class="bg-[transparent] border-[2px] rounded-md p-[5px_25px]">
+
+                                <option value=""> English </option>
+                                <option value=""> Hindi </option>
+    
+                            </select>
+
+                        </div>
+
+                        <button class="bg-[rgba(229,9,20,1)] px-[15px] rounded-[6px]">
+                            
+                            Sign In
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="w-full h-[calc(100vh-50px)] flex justify-center items-center">
+
+                <div class="w-[700px] text-[white] text-center">
+
+                    <p class="sm:text-[50px] text-[40px] font-bold"> Unlimited movies, TV shows and more </p>
+
+                    <p class="text-[20px]"> Starts at Rs149, Cancel at any time. </p>
+
+                    <p class="text-[16px] mt-[40px]"> Ready to watch? Enter your email to create or restart your membership. </p>
+
+                    <div class="p-[10px] m-[5px]">
+
+                        <form action="" class="grid sm:grid-cols-[70%_auto] grid-cols-1">
+
+                            <input type="text" placeholder="Email Address" class="border-[2px] pl-[20px] h-[60px] rounded-[10px] bg-state-900 border-[gray]">
+
+                            <button class="bg-[rgba(229,9,20,1)] px-[15px] rounded-[6px] p-[10px] text-[24px] sm:my-[0px] my-[20px] hover:bg-[rgb(174,11,19)] duration-1000"> Get Started &nbsp; > &nbsp; </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    
+</body>
+
+</html>

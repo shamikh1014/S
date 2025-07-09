@@ -19,9 +19,9 @@ const productOperations={
     search(pizzaId){
 
         const product=this.products.find(currentProduct=>currentProduct.id==pizzaId);
-        console.log('Product Found', product);
+        console.log('Product Found ', product);
         product.isAddedInCart=true;
-        console.log('Array', this.products);
+        console.log('Array ', this.products);
 
     },
 
@@ -44,7 +44,7 @@ const productOperations={
             return currentPizza;
         })
 
-        console.log('********Product Array', productsArray);
+        console.log('********Product Array ', productsArray);
         this.products=productsArray;
         return productsArray; // Wrap in Promise
 

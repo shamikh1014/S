@@ -7,7 +7,7 @@ import productOperations from "../services/product-operations.js";
 async function loadPizzas(){
 
     const pizzas=await productOperations.loadProducts();
-    console.log('Pizzas are', pizzas);
+    console.log('Pizzas are ', pizzas);
 
     for(let pizza of pizzas){
         preparePizzaCard(pizza);
@@ -34,11 +34,11 @@ loadPizzas();
 function addToCart(){
 
     // this-keyword (Current calling object reference)
-    console.log('Add to Cart Called...', this);
+    console.log('Add to Cart Called... ', this);
     const currentButton=this;
 
     const pizzaId=currentButton.getAttribute('product-id');
-    console.log('Pizza Id is', pizzaId);
+    console.log('Pizza Id is ', pizzaId);
     productOperations.search(pizzaId);
     printBasket();
 
@@ -94,7 +94,7 @@ function preparePizzaCard(pizza){
 
     const button=document.createElement('button');
     button.setAttribute('product-id', pizza.id);
-    button.innerText='Add to Card';
+    button.innerText='Add to Cart';
     button.className='btn btn-primary';
     button.addEventListener('click', addToCart); // Event Bind
 

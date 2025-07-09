@@ -1,0 +1,292 @@
+
+*{
+
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+header{
+
+    width: 60%;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    width: 600px;
+}
+
+.logo img{
+    
+    max-width: 100px;
+    padding: 0 5px;
+
+}
+
+.icons{
+
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+    /* border-right: 2px solid blue;
+    margin-right: 10px;
+    padding-right: 10px; */
+
+}
+
+.icons::after{
+
+    content: "";
+    border-right: 1px solid #b2b2b2;
+    margin-right: 10px;
+    padding-right: 10px;
+
+}
+
+.icon{
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.icon i{
+    font-size: 25px;
+}
+
+.btns{
+
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+
+}
+
+.btns button{
+
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: 1px solid #0a66c2;
+    border-radius: 20px;
+    font-weight: 500;
+
+}
+
+#btn1{
+
+    color: #0a66c2;
+    background-color: white;
+    /* transition: transform .5s ease-in-out; */
+
+}
+
+#btn1:hover{
+
+    background-color: rgb(227, 227, 247);
+    cursor: pointer;
+    /* transform: scale(.5); */
+
+}
+
+#btn2{
+
+    background-color: #0a66c2;
+    color: white;
+    
+}
+
+#btn-2:hover{
+
+    background-color: #1245b3;
+    cursor: pointer;
+    /* animation: brotate 4s linear 1; */
+
+}
+
+/* @keyframes brotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+
+#banner{
+
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#banner div{
+
+    width: 50%;
+    /*
+    display: flex;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    */
+
+}
+
+/* #info{
+    width: 55%;
+} */
+
+#banner-img{
+
+    background-image: url("/LinkedInClone/assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png");
+    height: 550px;
+    /* width: 45%; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#banner>#info{
+    padding:0 50px 0 150px;
+}
+
+#banner>#info>p{
+    font-size: 48px;
+}
+
+/* #banner>#info>button, a{
+
+} */
+
+.banner-start{
+
+    display: block;
+    width: 400px;
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 14px;
+
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+
+    margin: 25px 0;
+
+}
+
+.banner-start:hover{
+    background-color: #dddddd6c;
+}
+
+#banner>#info>button.banner-start{
+
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+#banner>#info>a.banner-start{
+
+    /* border-color: red; */
+    border-left-color: red;
+    border-right-color: blue;
+    border-top-color: green;
+    border-bottom-color: yellow;
+    border-width: 2px;
+
+}
+
+div#banner>div#info>span{
+
+    font-size: 12px;
+    width: 400px;
+    display: block;
+    text-align: center;
+
+}
+
+div#banner>div#info>span>a{
+
+    color: rgba(21, 110, 212);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+div#banner>div#info>span>a:hover{
+    text-decoration: underline;
+}
+
+section>#myrow *{
+    background-color: rgba(196, 196, 196, 0.14);
+}
+
+section>#myrow{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(196, 196, 196, 0.14);
+    
+}
+
+section>#myrow>div{
+
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: transparent;
+
+}
+
+section>#myrow>div>div{
+
+    width: 50%;
+    background-color: transparent;
+
+}
+
+section>#myrow>div>div>h2{
+
+    background-color: transparent;
+
+}
+
+section>#myrow>div>div>p{
+
+    background-color: transparent;
+    padding-top: 30px;
+    
+}
+
+section>#myrow>div>div>button{
+
+    background-color: transparent;
+    padding: 12px 15px;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+
+section>#myrow>div>div>button:hover{
+    backdrop-filter: gray;
+    color: white;
+}
